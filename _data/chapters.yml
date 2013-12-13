@@ -1,0 +1,8 @@
+- title: Why Build Static Web Apps?
+  slug: why-build-static-apps
+  author: mbleigh
+  description: There are hundreds of web application architectures, and it can be hard to understand what to choose. Learn why a static app might be right for your project.
+- title: Now You're Thinking With Services
+  slug: thinking-with-services
+  author: mbleigh
+  description: When building a static app, it can help to think of your project as a number of different services that all work together to accomplish your business goals.

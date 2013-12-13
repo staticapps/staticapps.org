@@ -1,0 +1,8 @@
+{
+  "name": "staticapps.org",
+  "version": "0.0.1",
+  "description": "A Field Guide for Static Apps",
+  "dependencies": {
+    "angular": "~1.2.3"
+  }
+}

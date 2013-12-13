@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<h1 class="post-title">{{ page.title }}</h1>
+
+<article class="post">
+{{ content }}
+</article>
+
+<nav class="chapter-nav">
+  {% if page.prev %}<a class="nav nav-prev" href="{{page.prev.url}}">{{page.prev.label}}</a>{% endif %}
+  <a class="nav nav-toc" href="/" title="Table of Contents"><i class="fa fa-book"></i></a>
+  {% if page.next %}<a class="nav nav-next" href="{{page.next.url}}">{{page.next.label}}</a>{% endif %}
+</nav>

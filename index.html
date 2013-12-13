@@ -1,0 +1,15 @@
+---
+layout: default
+title: Static Apps - A Field Guide
+---
+
+<div id="home">
+  <ul class="post-list">
+    {% for chapter in site.data.chapters %}
+    <li><a href="/articles/{{ chapter.slug }}" class="post-link">
+      <span class="title">{{ chapter.title }}</span>
+      <span class="description">{{ chapter.description }}</span>
+    </a></li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,12 @@
+name: Static Apps
+markdown: redcarpet
+pygments: true
+exclude:
+  - Gemfile
+  - divshot.json
+assets:
+  sources:
+    - _assets/images
+    - _assets/stylesheets
+    - _assets/javascripts
+    - _bower

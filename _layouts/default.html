@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+      
+        <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900,300italic,600italic" rel="stylesheet" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        {% stylesheet app %}
+    </head>
+    <body>
+      <header id="top" class="top-banner">
+        <h3>A Field Guide To</h3>
+        <h2>Static Apps</h2>
+      </header>
+      
+      <section id="content" class="content-main">
+        {{ content }}
+      </section>
+  
+      <footer id="bottom" class="credits">
+        Copyright &copy; 2014 StaticApps.org. Some rights reserved. Brought to you by <a href="http://www.divshot.com/" target="_blank">Divshot</a>
+      </footer>
+      {% javascript app %}
+    </body>
+</html>
