@@ -1,0 +1,19 @@
+ruby:
+- 2.0.0
+before_script:
+- npm install -g bower
+- bower install
+script: bundle exec jekyll build
+cache:
+  bundler: true
+  directories:
+    - _bower
+deploy:
+  provider: divshot
+  environment:
+    master: development
+    staging: staging
+    production: production
+  edge: true
+  skip_cleanup: true
+  

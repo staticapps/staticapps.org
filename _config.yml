@@ -4,6 +4,9 @@ pygments: true
 exclude:
   - Gemfile
   - divshot.json
+  - .bowerrc
+  - .travis.yml
+  - Gemfile.lock
 assets:
   sources:
     - _assets/images
