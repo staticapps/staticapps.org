@@ -16,9 +16,9 @@ Building an application with service orientation comes with three key benefits:
 1. Each service is built independently, and so they can utilize technologies that
    are particularly suited to their individual problem spaces. A search service
    might look very different from an email delivery service, for instance.
-2. Clear boundaries between services often means a more scalable user experience.
+2. Clear boundaries between services often mean more scalable user experiences.
    Services can be optimized individually, and one service experiencing an outage
-   doesn't necessarily have to take down the entire application.
+   doesn't necessarily take down the entire application.
 3. Services can often be structured in such a way that they can be implemented wholly
    by third parties.
 
