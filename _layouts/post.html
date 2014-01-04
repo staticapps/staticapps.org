@@ -8,7 +8,7 @@ layout: default
 </article>
 
 <nav class="chapter-nav">
-  {% if page.prev %}<a class="nav nav-prev" href="{{page.prev.url}}">{{page.prev.label}}</a>{% endif %}
+  {% if page.prev %}<a class="nav nav-prev" href="{{page.prev.url}}">&nbsp;{{page.prev.label}}</a>{% endif %}
   <a class="nav nav-toc" href="/" title="Table of Contents"><i class="fa fa-book"></i></a>
-  {% if page.next %}<a class="nav nav-next" href="{{page.next.url}}">{{page.next.label}}</a>{% endif %}
+  {% if page.next %}<a class="nav nav-next" href="{{page.next.url}}">{{page.next.label}}&nbsp;</a>{% endif %}
 </nav>

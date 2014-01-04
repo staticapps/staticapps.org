@@ -1,73 +1,113 @@
 @import "compass"
 @import "compass/reset"
 
-$site-primary: #a35
+$site-primary: #75ad72
+$site-secondary: #F5F0EC
+$body-family: "museo-slab", Helvetica, Arial, sans-serif
+$headings-family: "futura-pt", Helvetica, Arial, sans-serif
+$misc-family: "courier-prime", serif
+$body-color: #625f5d
 
 *
   box-sizing: border-box
 
 body
-  font-family: "Source Sans Pro", sans-serif
-  background: #f8f8f8
+  font-family: $body-family
+  color: darken($body-color, 5%)
+  border-top: 3px solid darken($site-primary, 10%)
+  background: $site-secondary
+
+h1, h2, h3, h4, h5, h6
+  font-family: $headings-family
+
 a
   color: $site-primary
   text-decoration: none
+  &:hover
+    color: darken($site-primary, 14%)
+    transition: all 260ms linear
  
 .top-banner
-  background: $site-primary
+  position: relative
+  font-family: $headings-family
   text-align: center
-  padding: 20px
+  margin-bottom: 2em
+  padding: 60px 20px
+  background: $site-primary
   color: white
-  border-bottom: 1em solid darken($site-primary, 6)
   h2
+    margin-bottom: 10px
     font-size: 4em
-    font-weight: 900
+    font-weight: bold
     text-transform: uppercase
-    letter-spacing: 0.2em
+    letter-spacing: 0.08em
   h3
+    margin-bottom: 10px
     text-transform: uppercase
-    font-size: 1.6em
-    letter-spacing: 0.2em
+    font-size: 1.4em
+    letter-spacing: 0.15em
     
 .content-main
   max-width: 940px
-  padding: 0 20px
   margin: 0 auto
+  padding: 20px 60px
+  background: $site-secondary
 
 .post-list
   margin: 2em auto
   max-width: 860px
-  
+
 .post-link
+  background: #fff
+  &:hover
+    border-color: darken(#e6e6e6, 2%)
   .coming-soon &
-    border-color: #ccc
+    background: #FBF8F5
+    border: 1px solid transparent
     color: #aaa
     .title:before
       content: "Coming Soon: "
     .description
       color: #aaa
   display: block
-  border: 1px solid lighten($site-primary, 30)
+  border: 1px solid lighten(#e6e6e6, 2%)
   margin-bottom: 1em
   padding: 1em
   .title, .description
     display: block
     line-height: 160%
   .title
+    font-family: $headings-family
     font-size: 1.2em
-    font-weight: 900
+    font-weight: 700
     margin-bottom: 0.3em
+    text-transform: uppercase
   .description
-    color: #333
+    color: $body-color
   
 .post-title
+  position: relative
   font-size: 2em
+  line-height: 1.3em
   padding: 0.8em
   font-weight: 600
   letter-spacing: -0.03em
   text-align: center
-  border-bottom: 1px solid #ddd
+  border-bottom: 4px double #ddd
   margin-bottom: 1em
+  // &:after
+  //   display: block
+  //   position: absolute
+  //   bottom: -9px
+  //   left: 50%
+  //   content: "|"
+  //   width: 8px
+  //   margin-left: -4px
+  //   text-align: center
+  //   font-size: 15px
+  //   line-height: 15px
+  //   color: #ddd
+  //   background: $site-secondary
 .post
   a
     text-decoration: underline
@@ -90,14 +130,14 @@ a
     padding: 0.75em
     margin-bottom: 1.5em
     line-height: 150%
-    border: 1px solid lighten($site-primary, 20)
+    border: 1px solid lighten(#e6e6e6, 2%)
     background: white
     p:last-child
       margin-bottom: 0
     .attribution
       display: block
       margin-top: 0.5em
-      color: #777
+      color: lighten($body-color, 35%)
       font-style: italic
   h3
     font-size: 1.4em
@@ -144,11 +184,53 @@ a.nav-prev
   line-height: 150%
   font-style: italic
   margin: 1em 0
+  color: darken($body-color, 10%)
   b
     font-weight: 600
     
 .credits
+  font-family: $misc-family
+  text-transform: uppercase
   padding: 1.5em
   margin-top: 2em
+  font-size: 0.72em
   color: #999
   text-align: center
+  background: #333
+  a
+    color: #ccc
+    &:hover
+      color: lighten(#ccc, 14%)
+
+
+.logo-icon
+  position: absolute
+  left: 50%
+  bottom: -50px
+  margin-left: -50px
+  a
+    color: $site-secondary
+    &:hover
+      color: #fff
+  .fa-bolt
+    position: absolute
+    z-index: 2
+    top: 26px
+    left: 40px
+
+.diamond
+  width: 0
+  height: 0
+  border: 50px solid transparent
+  border-bottom-color: darken($site-primary, 2%)
+  position: relative
+  top: -50px
+  &:after
+    content: ''
+    position: absolute
+    left: -50px
+    top: 50px
+    width: 0
+    height: 0
+    border: 50px solid transparent
+    border-top-color: $site-primary
