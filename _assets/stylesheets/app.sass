@@ -5,7 +5,7 @@ $site-primary: #75ad72
 $site-secondary: #F5F0EC
 $body-family: "museo-slab", Helvetica, Arial, sans-serif
 $headings-family: "futura-pt", Helvetica, Arial, sans-serif
-$misc-family: "courier-prime", serif
+$misc-family: "courier-prime", Courier, "Courier New", sans-serif
 $body-color: #625f5d
 
 *
@@ -35,15 +35,14 @@ a
   padding: 60px 20px
   background: $site-primary
   color: white
-  h2
+  h2, h3
     margin-bottom: 10px
+    text-transform: uppercase
+  h2
     font-size: 4em
     font-weight: bold
-    text-transform: uppercase
     letter-spacing: 0.08em
   h3
-    margin-bottom: 10px
-    text-transform: uppercase
     font-size: 1.4em
     letter-spacing: 0.15em
     
@@ -61,6 +60,8 @@ a
   background: #fff
   &:hover
     border-color: darken(#e6e6e6, 2%)
+    i
+      opacity: 1
   .coming-soon &
     background: #FBF8F5
     border: 1px solid transparent
@@ -82,6 +83,8 @@ a
     font-weight: 700
     margin-bottom: 0.3em
     text-transform: uppercase
+    i
+      opacity: 0.5
   .description
     color: $body-color
   
@@ -157,12 +160,13 @@ a.nav
   font-size: 1.2em
   padding: 0.6em 0.8em
   border: 1px solid transparent
-  color: #666
-  +transition(all 0.3s)
+  color: #847864
+  background: darken($site-secondary, 3%)
+  +transition(all 320ms)
   &:hover
-    color: white
-    background: $site-primary
-    border-color: darken($site-primary, 0.3)
+    background: darken($site-secondary, 6%)
+    // background: $site-primary
+    // border-color: darken($site-primary, 0.3)
 
 a.nav-toc
   border: 1px solid transparent
