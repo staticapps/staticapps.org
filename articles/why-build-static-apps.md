@@ -2,8 +2,8 @@
 layout: post
 title: Why Build Static Web Apps?
 next:
-  label: Thinking in Services
-  url: /articles/thinking-in-services
+  label: Thinking With Services
+  url: /articles/thinking-with-services
 ---
 
 Rather than assemble content in server-side processes, static web applications rely on the user's browser to drive interaction and content rendering. Once considered only useful for static content, modern static web apps can dynamically fetch data, synchronize multiple users in real time, and more. But why would you *want* to build a static web application?
