@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thinking With Services
+title: Thinking With Services for Static Web Apps
 prev:
   label: Why Build Static Apps?
   url: /articles/why-build-static-apps
