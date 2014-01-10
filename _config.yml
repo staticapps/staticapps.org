@@ -7,6 +7,8 @@ exclude:
   - .bowerrc
   - .travis.yml
   - Gemfile.lock
+  - bower.json
+  - divshot.json
 assets:
   sources:
     - _assets/images
