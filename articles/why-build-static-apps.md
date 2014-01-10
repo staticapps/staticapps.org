@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Why Build Static Web Apps?
+prev:
+  label: Defining Static Web Apps
+  url: /articles/defining-static-web-apps
 next:
   label: Thinking With Services
   url: /articles/thinking-with-services

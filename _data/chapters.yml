@@ -1,3 +1,7 @@
+- title: Defining Static Web Apps
+  slug: defining-static-web-apps
+  author: mbleigh
+  description: Static web applications are delivered to a user's browser without any server-side processing, but that doesn't mean they're any less capable.
 - title: Why Build Static Web Apps?
   slug: why-build-static-apps
   author: mbleigh
