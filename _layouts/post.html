@@ -12,3 +12,5 @@ layout: default
   <a class="nav nav-toc" href="/" title="Table of Contents"><i class="fa fa-book"></i></a>
   {% if page.next %}<a class="nav nav-next" href="{{page.next.url}}">{{page.next.label}}&nbsp;</a>{% endif %}
 </nav>
+
+{% unless page.next %}{% include subscribe.html %}{% endunless %}
