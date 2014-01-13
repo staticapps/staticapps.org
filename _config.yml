@@ -9,6 +9,7 @@ exclude:
   - Gemfile.lock
   - bower.json
   - divshot.json
+  - README.md
 assets:
   sources:
     - _assets/images
