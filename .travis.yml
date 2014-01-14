@@ -1,19 +1,24 @@
-ruby:
-- 2.0.0
+language: node_js
+node_js:
+- '0.10'
 before_script:
-- npm install -g bower
+- npm install -g bower grunt-cli
 - bower install
-script: bundle exec jekyll build
+- gem install compass
+script: npm test
 cache:
-  bundler: true
   directories:
-    - _bower
+  - node_modules
+  - app/bower_components
+after_success:
+- grunt build
 deploy:
   provider: divshot
+  skip_cleanup: true
+  edge: true
   environment:
     master: development
     staging: staging
     production: production
-  edge: true
-  skip_cleanup: true
-  
+  api_key:
+    secure: n0QhYjpet/L8MtrAlNyekXVdScYq4YYaWOlRAKGP2gHEC4V12DsjJzitse5sf6/lpMmV2VIZ5WW24QoAkL9XeVIqSc1ry8Zc4fZZEN3f2jGahzbrNvenUe//JT5EiiTWw5tHYyKHiBYzpYIfDz9Lf7lJy5uZgSWKqHPv8uVnPio=
