@@ -4,8 +4,8 @@
   "clean_urls": true,
   "error_page": "/error.html",
   "cache_control": {
-    "**.html":600,
-    "/assets/**":31536000
+    "/assets/**":31536000,
+    "**":600
   },
   "routes": {}
 }
