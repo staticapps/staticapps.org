@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.1.0
+- 2.1.0
 script: bundle exec jekyll build
 cache:
   bundler: true
@@ -12,3 +12,5 @@ deploy:
     master: development
     staging: staging
     production: production
+  api_key:
+    secure: IAJbV15q1p1ALJZgnTxSWP5ultbTwdUbpkw4OSc9eXYQlJ1QZl9oN/5sc/bty2vR3S9IbKr7GVTkJK1hRS9X1f4oLmDQuHRKtUiGiHqIVatuZiK+VOsHcFjKpuPG7G9D4WyjZUQSLz68PpaMelZylpF0L9WArFsympcMfKUjol0=
