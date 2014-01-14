@@ -2,8 +2,7 @@ language: ruby
 rvm:
 - 2.1.0
 script: bundle exec jekyll build
-cache:
-  bundler: true
+cache: bundler
 deploy:
   provider: divshot
   skip_cleanup: true
