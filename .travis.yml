@@ -1,6 +1,9 @@
 language: ruby
 rvm:
 - 2.1.0
+before_script:
+- npm install -g bower
+- bower install
 script: bundle exec jekyll build
 cache: bundler
 deploy:
