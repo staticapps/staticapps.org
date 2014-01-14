@@ -10,6 +10,7 @@ exclude:
   - bower.json
   - divshot.json
   - README.md
+  - vendor
 assets:
   js_compressor: uglifier
   sources:
