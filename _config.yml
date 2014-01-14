@@ -11,6 +11,7 @@ exclude:
   - divshot.json
   - README.md
 assets:
+  js_compressor: uglifier
   sources:
     - _assets/images
     - _assets/stylesheets
