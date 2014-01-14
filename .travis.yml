@@ -1,17 +1,9 @@
-language: node_js
-node_js:
-- '0.10'
-before_script:
-- npm install -g bower grunt-cli
-- bower install
-- gem install compass
-script: npm test
+language: ruby
+rvm:
+  - 2.1.0
+script: bundle exec jekyll build
 cache:
-  directories:
-  - node_modules
-  - app/bower_components
-after_success:
-- grunt build
+  bundler: true
 deploy:
   provider: divshot
   skip_cleanup: true
@@ -20,5 +12,3 @@ deploy:
     master: development
     staging: staging
     production: production
-  api_key:
-    secure: n0QhYjpet/L8MtrAlNyekXVdScYq4YYaWOlRAKGP2gHEC4V12DsjJzitse5sf6/lpMmV2VIZ5WW24QoAkL9XeVIqSc1ry8Zc4fZZEN3f2jGahzbrNvenUe//JT5EiiTWw5tHYyKHiBYzpYIfDz9Lf7lJy5uZgSWKqHPv8uVnPio=
