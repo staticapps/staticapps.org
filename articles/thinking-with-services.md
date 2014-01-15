@@ -4,6 +4,9 @@ title: Thinking With Services for Static Web Apps
 prev:
   label: Why Build Static Apps?
   url: /articles/why-build-static-apps
+next:
+  label: Assembling Your Static App Stack
+  url: /articles/assembling-your-static-app-stack
 ---
 
 Static web applications have very clearly defined constraints, and as such lend

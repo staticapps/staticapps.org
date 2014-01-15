@@ -1,12 +1,16 @@
 - title: Defining Static Web Apps
   slug: defining-static-web-apps
   author: mbleigh
-  description: Static web applications are delivered to a user's browser without any server-side processing, but that doesn't mean they're any less capable.
+  description: "Static web applications are delivered to a user's browser without any server-side processing, but that doesn't mean they're any less capable."
 - title: Why Build Static Web Apps?
   slug: why-build-static-apps
   author: mbleigh
-  description: There are hundreds of web application architectures, and it can be hard to understand what to choose. Learn why a static app might be right for your project.
+  description: "There are hundreds of web application architectures, and it can be hard to understand what to choose. Learn why a static app might be right for your project."
 - title: Now You're Thinking With Services
   slug: thinking-with-services
   author: mbleigh
-  description: When building a static app, it can help to think of your project as a number of different services that all work together to accomplish your business goals.
+  description: "When building a static app, it can help to think of your project as a number of different services that all work together to accomplish your business goals."
+- title: Assembling Your Static App Stack
+  slug: assembling-your-static-app-stack
+  author: mbleigh
+  description: "Building a static app isn't the end of your technological decision-making. Learn about the various types of tools you can use to build powerful static web apps."
