@@ -23,7 +23,7 @@ to a web host.
 
 **Examples:** [CoffeeScript](http://coffeescript.org), [LESS](http://www.lesscss.org/), [HAML](http://haml.info/), [Dart](https://www.dartlang.org/)
 
-### Build Tools
+### Build Tools / Site Generators
 
 Static web applications are stored on the server and sent to the browser as HTML,
 CSS, and JavaScript files, but they don't necessarily begin that way. Build tools help developers
@@ -38,6 +38,11 @@ has an active user community.
 **Examples:** [Jekyll](http://jekyllrb.com/), [Grunt](http://gruntjs.com/), [Yeoman](http://yeoman.io/)
 
 ### Package Managers
+
+Package managers allow developers to easily install open source or shared library code that is meant
+to work across multiple applications. Using a package manager, you can declare **dependencies** for
+your project that the package manager will automatically download and install into a usable location.
+This makes it easier both to add new libraries and update existing libraries in your projects.
 
 **Examples:** [Bower](http://bower.io/), [Component](http://component.io)
 
@@ -64,4 +69,43 @@ these frameworks give you elements such as buttons, grid layouts, well-styled fo
 
 ### Static Web Hosts
 
+Of course, you'll need a place to host your project once you're ready to bring it online. There are many options
+for static web hosting including traditional shared hosts, online storage with hosting, and new dedicated static
+web hosting services. When choosing a host, there are a few things (other than cost) to look for:
+
+* Does the host provide any kind of content acceleration through a global server network?
+* Can I host an SSL-protected static web app on the provider?
+* How easy is the deploy process? Are there developer-friendly features like rollback?
+
+**Examples:** [Divshot](http://www.divshot.io/), [Amazon S3](http://aws.amazon.com/s3/), [Harp](http://www.harp.io)
+
 ### Back-End Services
+
+Back-end service providers offer a way to implement a part of your application's business needs without having to host
+or build custom code for it. These services may provide database storage, user authentication, email delivery, or
+a variety of other services. Some back-end services try to offer a comprehensive package while others focus on a narrower
+slice of your application needs.
+
+**Examples:** [Firebase](http://www.firebase.com/), [UserApp](http://userapp.io), [Hull](http://hull.io)
+
+### Third-Party APIs
+
+If you're building a static web app and would like to integrate with data from a third-party API, you're in luck!
+Many API providers now offer either dedicated JavaScript libraries for direct browser integration or support static
+web apps through [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS).
+Connecting to APIs in-browser saves you the duplicated infrastructure cost of proxying requests through your own servers.
+
+**Examples:** [AWS SDK for Browser](http://aws.amazon.com/sdkforbrowser/), [GitHub API](http://developer.github.com/v3/)
+
+### Custom Server APIs
+
+As you build out your application, you may find there are pieces that can't be handled by an off-the-shelf third-party
+provider. That's ok, and totally in keeping with a static application mindset! When you run into these cases, it's best
+to build the functionality you need as a compact, independent, purpose-driven service that can be easily consumed by the
+browser and any other platforms you support. 
+
+---
+
+Choosing a technology stack that works well for you will be vital to the productivity and maintainability of your project.
+What works well for one application may not work well for another, but one of the benefits of building static is that
+you have more flexibility to compose an ideal, modular stack that suits your needs.
