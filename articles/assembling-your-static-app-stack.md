@@ -35,7 +35,7 @@ while others can be used for just about any application you might build. When ch
 tool, it makes sense to find something that fits your workflow, is actively maintained, and
 has an active user community.
 
-**Examples:** [Jekyll](http://jekyllrb.com/), [Grunt](http://gruntjs.com/), [Yeoman](http://yeoman.io/)
+**Examples:** [Jekyll](http://jekyllrb.com/), [Grunt](http://gruntjs.com/), [Yeoman](http://yeoman.io/), [Harp](http://harpjs.com/)
 
 ### Package Managers
 
@@ -77,7 +77,7 @@ web hosting services. When choosing a host, there are a few things (other than c
 * Can I host an SSL-protected static web app on the provider?
 * How easy is the deploy process? Are there developer-friendly features like rollback?
 
-**Examples:** [Divshot](http://www.divshot.io/), [Amazon S3](http://aws.amazon.com/s3/), [Harp](http://www.harp.io)
+**Examples:** [Divshot](http://www.divshot.io/), [Amazon S3](http://aws.amazon.com/s3/), [GitHub Pages](http://pages.github.com/)
 
 ### Back-End Services
 
