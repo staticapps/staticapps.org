@@ -1,5 +1,7 @@
 # StaticApps.org
 
+[![Build Status](https://travis-ci.org/staticapps/staticapps.org.png?branch=production)](https://travis-ci.org/staticapps/staticapps.org)
+
 StaticApps.org is an evolving collection of articles and resources promoting the
 use of static web applications (i.e. plain ol' JS, CSS, and HTML for the front-end).
 
