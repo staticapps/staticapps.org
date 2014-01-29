@@ -4,6 +4,9 @@ title: Assembling Your Static App Stack
 prev:
   label: Thinking With Services
   url: /articles/thinking-with-services
+next:
+  label: Taming URLs with pushState
+  url: /articles/taming-urls-with-pushstate
 ---
 
 Once you've decided to build a static web application, there are still several important choices
