@@ -58,7 +58,7 @@ of the browser's navigational history for an application.
 
 > You may have heard of "hash" or "hashbang" URLs. These URLs utilize the fragment portion of the URL as if it
 > were an extension of the path name (e.g. `#/zip/90014`). While once a common or encouraged practice, the HTML5 History API makes
-> hash URL misuse unnecessary. Only consider this techniques if you must [support older browsers](http://caniuse.com/#search=pushstate).
+> hash URL misuse unnecessary. Only consider this technique if you must [support older browsers](http://caniuse.com/#search=pushstate).
 
 While it is actually very simple to implement HTML5 History directly (see [this great article on the Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history)
 for an overview), most developers will use a routing library that is either built in to their framework of choice
