@@ -7,6 +7,13 @@ use of static web applications (i.e. plain ol' JS, CSS, and HTML for the front-e
 
 Have an idea for an article you'd like to see? [Create an issue!](https://github.com/staticapps/staticapps.org/issues)
 
+Ideas for articles:
+
+* custom element (web components)
+* testing
+* deployment
+* etc...
+
 ### License
 
 [![Creative Commons License](http://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
