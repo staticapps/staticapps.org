@@ -14,7 +14,7 @@
   slug: assembling-your-static-app-stack
   author: mbleigh
   description: "Building a static app isn't the end of your technological decision-making. Learn about the various types of tools you can use to build powerful static web apps."
-- title: Taming URLs with pushState
-  slug: taming-urls-with-pushstate
+- title: Routing URLs in Static Apps
+  slug: routing-urls-in-static-apps
   author: mbleigh
-  description: "One of the key mechanics of a static web application is its ability to change URLs without reloading the page. Learn how to make it work with HTML5's pushState."
+  description: "URLs are an important part of your application's user experience, but can be a challenge in static applications. Learn what you can do and why you should care."
