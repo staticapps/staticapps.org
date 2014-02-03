@@ -18,3 +18,7 @@
   slug: routing-urls-in-static-apps
   author: mbleigh
   description: "URLs are an important part of your application's user experience, but can be a challenge in static applications. Learn what you can do and why you should care."
+- title: Authentication and Authorization
+  slug: authentication-and-authorization
+  author: mbleigh
+  description: "Authentication is perhaps the single most common requirement of any application, and quickly and easily registering for a service can make a huge difference for the user."

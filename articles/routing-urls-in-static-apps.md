@@ -4,6 +4,9 @@ title: Routing URLs in Static Web Apps
 prev:
   label: Assembling Your Static App Stack
   url: /articles/assembling-your-static-app-stack
+next:
+  label: Authentication and Authorization
+  url: /articles/authentication-and-authorization
 ---
 
 In [Defining Static Web Apps](/articles/defining-static-web-apps) we discussed how in static web
