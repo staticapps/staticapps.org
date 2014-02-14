@@ -22,3 +22,7 @@
   slug: authentication-and-authorization
   author: mbleigh
   description: "Authentication is perhaps the single most common requirement of any application, and quickly and easily registering for a service can make a huge difference for the user."
+- title: Cross-Domain Requests With CORS
+  slug: cross-domain-requests-with-cors
+  author: mbleigh
+  description: "Cross-Origin Resource Sharing is a powerful technology for static web apps that allows you to safely request and utilize data from other servers. Learn how to use it!"

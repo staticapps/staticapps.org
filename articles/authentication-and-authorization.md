@@ -4,6 +4,9 @@ title: Authentication and Authorization
 prev:
   label: Routing URLs in Static Apps
   url: /articles/routing-urls-in-static-apps
+next:
+  label: Cross-Domain Requests with CORS
+  url: /articles/cross-domain-requests-with-cors
 ---
 
 Authentication is perhaps the single most common requirement of any application. Being able to
