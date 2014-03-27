@@ -63,7 +63,7 @@ Because the token is generated at the time of login and is random and unguessabl
 as proof enough that the request comes from the user to whom the token was assigned. A token that grants
 access without any additional requirements is known as a **bearer token**.
 
-Before token-based authentication became prevalant, many application APIs simply used bare username and password credentials
+Before token-based authentication became prevalent, many application APIs simply used bare username and password credentials
 passed along in the request. Token-based authentication is superior to such a system for a number of reasons:
 
 1. Credentials, especially user-provided passwords, should be stored as securely and infrequently as possible.

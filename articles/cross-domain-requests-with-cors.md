@@ -37,7 +37,7 @@ as they allow you to build novel interfaces or mash-ups without needing to build
 back-end.
 
 If you are building an application using a third-party data provider or an API that already
-supports CORS, there isn't much else you need to know! You just make normal AJAX reqeusts
+supports CORS, there isn't much else you need to know! You just make normal AJAX requests
 from the browser and everything will "just work." If, on the other hand, you are building a 
 custom back-end to provide data to your static app, you will need to know a bit more.
 
