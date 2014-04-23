@@ -110,11 +110,6 @@ as [Firebase](http://firebase.com) and [UserApp](http://userapp.io) offer simple
 static application without running any server-side code yourself. Each service will have its own strengths and weaknesses
 and should be considered as part of your overall authentication strategy.
 
-One final (and extremely promising) option for authentication is [Mozilla Persona](http://www.mozilla.org/en-US/persona/).
-While it currently offers simple email-based authentication in a cross-browser way, the long-term goal of the project is
-to bring authentication directly into the browser itself. If this goal is realized, it may become possible to have a
-trusted authentication scheme that doesn't rely on any server whatsoever.
-
 ---
 
 Phew, that was a lot of information! Properly handling user authentication and authorization can be complex, and the specific
