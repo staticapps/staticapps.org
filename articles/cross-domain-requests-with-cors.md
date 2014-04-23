@@ -4,6 +4,9 @@ title: Cross-Domain Requests with CORS
 prev:
   label: Authentication and Authorization
   url: /articles/authentication-and-authorization
+next:
+  label: Front-End Error Handling
+  url: /articles/front-end-error-handling
 ---
 
 **Cross-Origin Resource Sharing (CORS)** is a powerful technology for static web apps. To understand

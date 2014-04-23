@@ -1,0 +1,27 @@
+---
+layout: nil
+title : Atom Feed
+---
+<?xml version="1.0" encoding="utf-8" ?>
+
+<feed xmlns="http://www.w3.org/2005/Atom"> 
+  <title>StaticApps.org</title>
+  <link href="http://www.staticapps.org/atom.xml" rel="self"/>
+  <link href="http://www.staticapps.org/"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://www.staticapps.org/</id>
+  <author>
+    <name>StaticApps.org</name>
+    <email>hello@staticapps.org</email>
+  </author>
+ 
+  {% for chapter in site.data.chapters reversed %}
+  <entry>
+    <title>{{ chapter.title }}</title>
+    <link href="http://www.staticapps.org/articles/{{chapter.slug}}"/>
+    <updated>{{ chapter.date | date_to_xmlschema }}</updated>
+    <id>http://www.staticapps.org/articles/{{chapter.slug}}</id>
+    <content type="html">{{ chapter.description | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+</feed>

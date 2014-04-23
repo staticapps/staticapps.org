@@ -2,27 +2,39 @@
   slug: defining-static-web-apps
   author: mbleigh
   description: "Static web applications are delivered to a user's browser without any server-side processing, but that doesn't mean they're any less capable."
+  date: 2014-01-31T00:00-0:500
 - title: Why Build Static Web Apps?
   slug: why-build-static-apps
   author: mbleigh
   description: "There are hundreds of web application architectures, and it can be hard to understand what to choose. Learn why a static app might be right for your project."
+  date: 2014-02-07T00:00-0:500
 - title: Now You're Thinking With Services
   slug: thinking-with-services
   author: mbleigh
   description: "When building a static app, it can help to think of your project as a number of different services that all work together to accomplish your business goals."
+  date: 2014-02-14T00:00-0:500
 - title: Assembling Your Static App Stack
   slug: assembling-your-static-app-stack
   author: mbleigh
   description: "Building a static app isn't the end of your technological decision-making. Learn about the various types of tools you can use to build powerful static web apps."
+  date: 2014-02-21T00:00-0:500
 - title: Routing URLs in Static Apps
   slug: routing-urls-in-static-apps
   author: mbleigh
   description: "URLs are an important part of your application's user experience, but can be a challenge in static applications. Learn what you can do and why you should care."
+  date: 2014-02-28T00:00-0:500
 - title: Authentication and Authorization
   slug: authentication-and-authorization
   author: mbleigh
   description: "Authentication is perhaps the single most common requirement of any application, and quickly and easily registering for a service can make a huge difference for the user."
+  date: 2014-03-04T00:00-0:500
 - title: Cross-Domain Requests With CORS
   slug: cross-domain-requests-with-cors
   author: mbleigh
   description: "Cross-Origin Resource Sharing is a powerful technology for static web apps that allows you to safely request and utilize data from other servers. Learn how to use it!"
+  date: 2014-03-11T00:00-0:500
+- title: "Front-End Error Handling"
+  slug: front-end-error-handling
+  author: mbleigh
+  description: "Error handling is a vital part of any application's user experience. Unfortunately, the default error handling for JavaScript applications is basically to do nothing."
+  date: 2014-04-17T00:00-0:500
