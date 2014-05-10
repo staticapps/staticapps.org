@@ -1,6 +1,6 @@
 name: Static Apps
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 exclude:
   - Gemfile
   - divshot.json

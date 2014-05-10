@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'jekyll', '2.0.3'
 gem 'redcarpet'
-gem 'jekyll-assets'
+gem 'jekyll-assets', '0.7.8'
 
 gem 'coffee-script'
 gem 'sass'
