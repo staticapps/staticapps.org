@@ -68,7 +68,7 @@ passed along in the request. Token-based authentication is superior to such a sy
 
 1. Credentials, especially user-provided passwords, should be stored as securely and infrequently as possible.
    Especially if an application offers third-party access to its server-side resources, direct password usage
-   is a recipe for a security disaster that may compromise a users' accounts outside your own application.
+   is a recipe for a security disaster that may compromise a user's accounts outside your own application.
 2. The server can revoke access to a generated token at any time. If a user has reason to believe that one of
    their authorized tokens has been compromised in some way, it is simple to revoke access to the token without
    universally resetting a user's login credentials or all granted tokens.
