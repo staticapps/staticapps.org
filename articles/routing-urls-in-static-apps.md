@@ -9,9 +9,9 @@ next:
   url: /articles/authentication-and-authorization
 ---
 
-In [Defining Static Web Apps](/articles/defining-static-web-apps) we discussed how in static web
+In [Defining Static Web Apps](/articles/defining-static-web-apps) we mentioned that in static web
 applications the server simply passes along flat HTML files without any additional processing. However,
-quality web application make use of **readable URLs** that **describe the content that resides there**.
+quality web applications make use of **readable URLs** that **describe the content that resides there**.
 For instance, if I'm creating an application that displays weather information, `/zip/90014` is a
 better way to represent the weather in Los Angeles than `/#w-zone.120453931`. So how can we maintain
 clean, readable URLs while still doing the heavy lifting in the browser?
@@ -76,7 +76,7 @@ the server won't recognize the URL and will issue a 404 error.
 
 Modern static application hosts such as Divshot fully support routing for HTML5 apps,
 but services such as Amazon S3, Dropbox, and GitHub Pages have no capability for URL reassignment. Some offer a generic
-"error page" that can be repurposed for static application routing, but doing so is strongly discouraged as for any non-browser the pages
+"error page" that can be repurposed for static application routing, but doing so is strongly discouraged as for any non-browser visitor the pages
 will appear to be erroneous. If you are self-hosting, it is possible to [configure web servers such as Apache and Nginx](http://readystate4.com/2012/05/17/nginx-and-apache-rewrite-to-support-html5-pushstate/)
 to work with the HTML5 History API.
 
