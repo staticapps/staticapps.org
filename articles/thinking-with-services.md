@@ -48,9 +48,9 @@ a cohesive, intuitive experience for a particular end user.
 
 Interestingly, this means that it can be very simple to build multiple static app UIs
 for the same application. You might build one interface application for end users and
-and entirely separate one for application administrators, as an example. Service-Oriented 
+an entirely separate one for application administrators, as an example. Service-Oriented 
 Architectures can be implemented in a wide variety of ways, though for our purposes the 
-communication channels between services are likely involve sending and receiving 
+communication channels between services are likely to involve sending and receiving 
 JSON data over HTTP.
 
 As you think about the best way to structure your application, keeping in mind the
