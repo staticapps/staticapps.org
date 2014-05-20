@@ -81,7 +81,6 @@ will be:
   input, but with a few changes the action might succeed.
 * **Try Again Later.** Something has gone wrong, but it's likely to work again
   soon. Check back in a while, and if it's still not working contact support.
-  Depending on your application, this
 * **Contact us.** Something is wrong in an unexpected place. Get in touch with
   support as this isn't likely to get better on its own.
   
@@ -156,4 +155,4 @@ to detect the status code and react appropriately.
 The most important takeaway for error handling is that **you need to do it.** Any
 step towards informing the user when something goes wrong is a good one. Even an
 `alert()` box is better than a silent failure. Remember, your application's user
-experience encompasses the everything, not just the golden path.
+experience encompasses everything, not just the golden path.
