@@ -47,7 +47,7 @@ to work across multiple applications. Using a package manager, you can declare *
 your project that the package manager will automatically download and install into a usable location.
 This makes it easier both to add new libraries and update existing libraries in your projects.
 
-**Examples:** [Bower](http://bower.io/), [Component](http://component.io)
+**Examples:** [Bower](http://bower.io/), [Component](http://component.io), [Browserify](http://browserify.org), [Webpack](http://webpack.github.io/)
 
 ### JavaScript Frameworks
 
