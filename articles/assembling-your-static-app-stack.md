@@ -38,7 +38,7 @@ while others can be used for just about any application you might build. When ch
 tool, it makes sense to find something that fits your workflow, is actively maintained, and
 has an active user community.
 
-**Examples:** [Jekyll](http://jekyllrb.com/), [Grunt](http://gruntjs.com/), [Yeoman](http://yeoman.io/), [Harp](http://harpjs.com/), [Roots](http://roots.cx/)
+**Examples:** [Jekyll](http://jekyllrb.com/), [Grunt](http://gruntjs.com/), [Yeoman](http://yeoman.io/), [Harp](http://harpjs.com/), [Roots](http://roots.cx/), [Brunch.io](http://brunch.io/)
 
 ### Package Managers
 
