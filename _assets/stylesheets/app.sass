@@ -236,7 +236,6 @@ a.nav-prev
     &:hover
       color: lighten(#ccc, 14%)
 
-
 .logo-icon
   position: absolute
   left: 50%
@@ -281,7 +280,7 @@ a.nav-prev
     color: black
     font-weight: bold
       
-.subscribe
+.subscribe, .sponsor
   padding: 25px 15px
   margin: 15px 0
   text-align: center
@@ -314,6 +313,34 @@ a.nav-prev
     background: $site-primary
     border: 0
     cursor: pointer
+
+.sponsor
+  text-align: left
+  a
+    text-decoration: underline
+  p
+    font-size: 16px
+    line-height: 25px
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+  .headline
+    font-weight: bold
+  + p
+    font-size: 12px
+    text-align: center
+    opacity: 0.8
+    a
+      text-decoration: underline
+
+.badge
+  font-size: 12px
+  text-transform: uppercase
+  color: #847864
+  background: darken($site-secondary, 3%)
+  margin: -1px 0 0 6px
+  padding: 4px 6px
+  vertical-align: 1px
 
 img.diagram
   display: block

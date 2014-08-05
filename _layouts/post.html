@@ -13,4 +13,6 @@ layout: default
   {% if page.next %}<a class="nav nav-next" href="{{page.next.url}}">{{page.next.label}}&nbsp;</a>{% endif %}
 </nav>
 
+{% include sponsor.html %}
+
 {% unless page.next %}{% include subscribe.html %}{% endunless %}
