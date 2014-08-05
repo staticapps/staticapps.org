@@ -57,7 +57,7 @@ fetching data and compiling it into HTML that the user can see, while in a stati
 
 This may seem like a small difference, but it has widespread effects throughout the architecture,
 design, and user experience of the application as a whole. We will dive into some of the reasons
-you might want to build static web apps in the next article.
+you might want to build static web apps in the next chapter.
 
 ### Hybrid Apps
 

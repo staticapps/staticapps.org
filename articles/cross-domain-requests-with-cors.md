@@ -20,7 +20,7 @@ the **origin**. The origin is everything in the URL before the **path** (for exa
 `http://www.example.com`). For certain actions, the browser will compare origins and, if
 they don't match, won't allow things to proceed. For example:
 
-* A parent document can't access the contents of an `<iframe>` that on a different
+* A parent document can't access the contents of an `<iframe>` that comes from a different
   origin. This prevents a malicious site from opening up your bank's website and stealing
   your credentials, as an example.
 * While one document can send information to another via a form post, AJAX
@@ -88,24 +88,24 @@ to help you manage CORS headers appropriately. Which headers you will need depen
 ### A Common Example
 
 Let's take one of the most common use cases for CORS: accessing application data from a JSON API on another
-server. Let's say we want to `GET` data from `http://api.example.com/user` from `http://www.example.com`.
-We have an access token, (e.g. `"ABC123"`), that needs to be passed to the server in the `Authorization`
+server. Let's say we want to `GET` data from `http://api.example.com/user` while visiting `http://www.example.com`.
+We have an access token, (e.g. `"ABC123"`), that needs to be passed to the API server in the `Authorization`
 header to authenticate the request. When we create the AJAX request with the custom header, the browser
-will send an `OPTIONS` request to the server with some relevant headers:
+will send an `OPTIONS` request to the API server with some relevant headers:
 
     OPTIONS /user
     Origin: http://www.example.com
     Access-Control-Request-Method: GET
     Access-Control-Request-Headers: Authorization
     
-This lets your server know the method and headers of the request that's about to happen. Since this is a
+This lets your API server know the method and headers of the request that's about to happen. Since this is a
 request that you would want to allow, you would then respond to the request with these headers:
 
     Access-Control-Allow-Origin: http://www.example.com
     Access-Control-Allow-Headers: AUTHORIZATION
     Access-Control-Allow-Methods: GET
     
-Now the browser will proceed to send the actual `GET` request to your server, and you can respond to that
+Now the browser will proceed to send the actual `GET` request to your API server, and you can respond to that
 as you would normally.
 
 ---
