@@ -1,2 +1,5 @@
 _site
 _bower
+.divshot-cache
+.bundle
+vendor
