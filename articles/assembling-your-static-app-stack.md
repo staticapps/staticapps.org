@@ -98,7 +98,7 @@ Many API providers now offer either dedicated JavaScript libraries for direct br
 web apps through [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS).
 Connecting to APIs in-browser saves you the duplicated infrastructure cost of proxying requests through your own servers.
 
-**Examples:** [AWS SDK for Browser](http://aws.amazon.com/sdkforbrowser/), [GitHub API](http://developer.github.com/v3/), [Keen.io](http://keen.io)
+**Examples:** [AWS SDK for Browser](http://aws.amazon.com/sdkforbrowser/), [GitHub API](http://developer.github.com/v3/), [Keen IO](http://keen.io)
 
 ### Custom Server APIs
 
