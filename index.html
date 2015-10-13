@@ -9,20 +9,16 @@ title: Static Web Apps - A Field Guide
     architecture eases common web development headaches without introducing additional complexity. This
     guide will introduce you to the world of static web applications and
     offer solutions to common challenges encountered while building them. Welcome!</p>
-  
+
   {% include subscribe.html %}
-  
+
   <ul class="post-list">
     {% for chapter in site.data.chapters %}
-    <li><a href="/articles/{{ chapter.slug }}" class="post-link">
+    <li><a href="/articles/{{ chapter.slug }}/" class="post-link">
       <span class="title">{{ chapter.title }} &nbsp;<i class="fa fa-angle-right"></i></span>
       <span class="description">{{ chapter.description }}</span>
     </a></li>
     {% endfor %}
-    <li class="coming-soon"><a class="post-link">
-      <span class="title">New Content Weekly!</span>
-      <span class="description">We add new content to this resource weekly, so don't forget to subscribe above if you want to see more!</span>
-    </a></li>
   </ul>
 
   {% include sponsor.html %}

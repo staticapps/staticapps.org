@@ -2,17 +2,15 @@ language: ruby
 rvm:
 - 2.1.0
 before_script:
-- npm install -g bower
-- bower install
+- npm install bower firebase-tools@^2.0
+- ./node_modules/.bin/bower install
 script: bundle exec jekyll build
-cache: bundler
-deploy:
-  provider: divshot
-  skip_cleanup: true
-  edge: true
-  environment:
-    master: development
-    staging: staging
-    production: production
-  api_key:
-    secure: IAJbV15q1p1ALJZgnTxSWP5ultbTwdUbpkw4OSc9eXYQlJ1QZl9oN/5sc/bty2vR3S9IbKr7GVTkJK1hRS9X1f4oLmDQuHRKtUiGiHqIVatuZiK+VOsHcFjKpuPG7G9D4WyjZUQSLz68PpaMelZylpF0L9WArFsympcMfKUjol0=
+cache:
+  directories:
+    - node_modules
+    - vendor/bundle
+env:
+  global:
+    secure: DmqYFucaL5nu9MGopZd2CrqzIenOuarCpUqOD4bFV/ja+dOzC4mYi/85AWQxlDRHa+23WmsUSQ+k4G2KwISGndh39omlEHggadXR/2TS71sKucdr9wNmPYKAemolXD1QFgYJRqXHe0VF6dT4JGeZ6bYissmKO/lep8I99TQ5vXI=
+after_success:
+  - ./node_modules/.bin/firebase deploy --token $FIREBASE_TOKEN
