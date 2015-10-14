@@ -11,8 +11,7 @@ cache:
   - node_modules
   - vendor/bundle
 after_success:
-- echo $FIREBASE_TOKEN
 - ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
 env:
   global:
-  - secure: gSbg+1e1NgyzkonQZhLx9uRj1bxrwPj+HguYSptyQBTuESgdpH4mMkNzwqUq8lReIHamwfLRRn5dNXgV3zlCRqa6P43aIH9GltJhmN9RzUeX2c/WX62J9VbLSlv10VTw3eCuJXIZPJhcgXRcxE0pCgRG5sCjlm8jTWCINxpBa7s=
+    secure: GA0VKk+fnzSlpA0Tqvk3eArzypahdQKqtYlbMhD4l4KIOkrobmS86j/MgPAytrEbMzWhMS5SODak0liFSG2eDslxDw6TZHGBZgYTAN1c+zr5613eVfU09n51VgXZvj7ziN773fx1zskuuWBRoxzNs8LGugPn8whdGPrR1pLcli0=
