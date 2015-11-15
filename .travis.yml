@@ -3,15 +3,17 @@ sudo: false
 rvm:
 - 2.1.0
 before_script:
-- npm install bower firebase-tools@^2.0
 - "./node_modules/.bin/bower install"
 script: bundle exec jekyll build
 cache:
   directories:
   - node_modules
   - vendor/bundle
-after_success:
-- ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
-env:
-  global:
-    secure: GA0VKk+fnzSlpA0Tqvk3eArzypahdQKqtYlbMhD4l4KIOkrobmS86j/MgPAytrEbMzWhMS5SODak0liFSG2eDslxDw6TZHGBZgYTAN1c+zr5613eVfU09n51VgXZvj7ziN773fx1zskuuWBRoxzNs8LGugPn8whdGPrR1pLcli0=
+deploy:
+  provider: firebase
+  edge:
+  	source: mbleigh/dpl
+    branch: firebase
+  on:
+  	all_branches: true
+secure: "WF0AgZN36iUkf9iHheViF3gFRH7HlJ1MNuRdivXYSeK+nZTLVMzNJfbBoakGx8y2p3E78rROOf5GYlIxcxHtggTU5TXTZid5zj3o0SNAfxSJxwU3NCOcQiJ0skW4MBYg0T0STHtWjs7onKi/q0ykt+YnYIGaZA8Mua9f+AsciIc="
