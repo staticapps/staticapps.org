@@ -17,4 +17,6 @@ deploy:
     branch: firebase
   on:
     all_branches: true
-secure: "WF0AgZN36iUkf9iHheViF3gFRH7HlJ1MNuRdivXYSeK+nZTLVMzNJfbBoakGx8y2p3E78rROOf5GYlIxcxHtggTU5TXTZid5zj3o0SNAfxSJxwU3NCOcQiJ0skW4MBYg0T0STHtWjs7onKi/q0ykt+YnYIGaZA8Mua9f+AsciIc="
+env:
+  global:
+    secure: FM+qmB1wniRtEUDqdL6AqIacc5/qvgzffng89ReI3SPc4t2PqZoFF2LYXoWT2RRqwQ8HP/8c8z0SrRTFbTBP6PPyRLDLljaXf9EXTFh8BqLhQ28zhVCD5+8rbVlq3N09L9oP3ZDnvWjhtSF39nP/BECKw608/RJe803iHXdvM8M=
