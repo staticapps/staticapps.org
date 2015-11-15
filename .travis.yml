@@ -1,7 +1,7 @@
 language: ruby
 sudo: false
 rvm:
-- "2.2"
+- '2.2'
 before_script:
 - npm install bower
 - "./node_modules/.bin/bower install"
@@ -18,6 +18,5 @@ deploy:
     branch: firebase
   on:
     all_branches: true
-env:
-  global:
-    secure: FM+qmB1wniRtEUDqdL6AqIacc5/qvgzffng89ReI3SPc4t2PqZoFF2LYXoWT2RRqwQ8HP/8c8z0SrRTFbTBP6PPyRLDLljaXf9EXTFh8BqLhQ28zhVCD5+8rbVlq3N09L9oP3ZDnvWjhtSF39nP/BECKw608/RJe803iHXdvM8M=
+  token:
+    secure: s6Jp+xrJtPCSDpwEsOfPRqn+qroY35G8NP+LKXxJguKx0beCTgWEuvH7haNcMBSwr6JO8umtcNG9Z6aUdVqFphS5wJaQXUg6XdxfvlGKSRMO5RzVT0EAYnyci3rYUWponduSCSjgFZkXqhECuEadHqC+a1r4hr0qaznSDffk6Nw=
