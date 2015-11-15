@@ -1,7 +1,7 @@
 language: ruby
 sudo: false
 rvm:
-- 2.1.0
+- 2.2.3
 before_script:
 - npm install bower
 - "./node_modules/.bin/bower install"
@@ -12,6 +12,7 @@ cache:
   - vendor/bundle
 deploy:
   provider: firebase
+  skip_cleanup: true
   edge:
     source: mbleigh/dpl
     branch: firebase
