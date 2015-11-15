@@ -15,7 +15,7 @@ deploy:
   skip_cleanup: true
   edge:
     source: mbleigh/dpl
-    branch: 6bcbc4c
+    branch: firebase
   on:
     all_branches: true
 env:
