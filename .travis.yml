@@ -13,10 +13,7 @@ cache:
 deploy:
   provider: firebase
   skip_cleanup: true
-  edge:
-    source: mbleigh/dpl
-    branch: firebase
-  on:
-    all_branches: true
+  project:
+    master: staticapps
   token:
     secure: s6Jp+xrJtPCSDpwEsOfPRqn+qroY35G8NP+LKXxJguKx0beCTgWEuvH7haNcMBSwr6JO8umtcNG9Z6aUdVqFphS5wJaQXUg6XdxfvlGKSRMO5RzVT0EAYnyci3rYUWponduSCSjgFZkXqhECuEadHqC+a1r4hr0qaznSDffk6Nw=
