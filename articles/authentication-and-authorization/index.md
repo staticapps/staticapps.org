@@ -1,4 +1,5 @@
 ---
+---
 layout: post
 title: Authentication and Authorization
 prev:
@@ -43,6 +44,20 @@ else's**. Remember, you're protecting your application against malicious users, 
 your development time up with unreasonable security constraints. If a user tries to hack your application and
 in the process destroys their own user account data, that's not a problem. It's only when actions
 might affect, compromise, or destroy the data of other users that you need to worry.
+
+That said, think twice about who should own which data.
+In lots of websites there's data **about** a user that affects how the
+site owners, their servers and their customer service agents will act:
+
+* Email addresses.
+* Payment history.
+* Premium subscription level and expiration date.
+* Confirmed orders' shipping addresses.
+* You can probably think of more.
+
+So even though this data is **about** a user, it shouldn't be considered
+**theirs** in authorization context.
+
 
 ### Temporary Revocable Access Credentials
 
