@@ -58,7 +58,7 @@ generally like this:
 4. The server transmits the token back to the client.
 5. The client includes the provided token on subsequent requests to the server as a proof of identity,
    granting the user access to protected resources.
-   
+
 Because the token is generated at the time of login and is random and unguessable, its presence serves
 as proof enough that the request comes from the user to whom the token was assigned. A token that grants
 access without any additional requirements is known as a **bearer token**.
@@ -75,9 +75,15 @@ passed along in the request. Token-based authentication is superior to such a sy
 3. In addition to manual revocation, tokens can be automatically expired or require additional proofs that they
    should remain valid. In essence, token-based authentication gives you the power to fully control your application's
    authentication and authorization flow.
-   
-Note that because bearer tokens grant immediate access to anyone possessing the token, **it is vital that any communication
-that includes a token take place over an SSL-encrypted connection.**
+
+Note that because bearer tokens grant immediate access to anyone possessing
+(or guessing) the token, **it is vital that any communication
+that includes a token take place over a secure channel,**
+"secure" meaning third parties should be unable to obtain any (partial)
+information about the token.
+Nowadays (2017) the secure channel usually is the
+**SSL/TLS encryption** used in an **HTTPS** connection.
+
 
 ### Digging Deeper
 
