@@ -25,7 +25,7 @@ categories:
   maintenance) or unexpected (server crash!).
 * **Unexpected Errors:** These are errors that likely indicate a bug in
   the application, such as unhandled exceptions.
-  
+
 Almost every application will have instances of each of these error categories
 at some point. Handling each appropriately is key to keeping users who
 encounter errors from becoming angry users.
@@ -64,7 +64,7 @@ to the end user.
 
 There are many ways to implement error handling in a JavaScript application.
 You may define a global error handler that can display messages passed to it,
-or have each component or control handle its own errors. 
+or have each component or control handle its own errors.
 
 One clean way to handle errors is to define a common schema for all of your
 application's errors and use the browser's built-in event system to "bubble
@@ -83,7 +83,20 @@ will be:
   soon. Check back in a while, and if it's still not working contact support.
 * **Contact us.** Something is wrong in an unexpected place. Get in touch with
   support as this isn't likely to get better on its own.
-  
+* **Here's your data.** There will always be users who forget to copy their
+  text before they hit submit, and it shouldn't be their responsibility in the
+  first place. It's your UI's duty to cherish the effort that users put in
+  crafting some of their input, and thus at the very least, offer them means
+  to save their own backup of their work when your app fails to do so properly.
+  * This includes taking forever. If your modal "Saving…" dialog blocks
+    access to their composed message for more than a few seconds,
+    users are entitled to get angry.
+  * You can still use modal dialogs if they (at least after a short wait)
+    offer a button to give read-only access to the input data.
+    Make sure the button (and any timers for it) work in the most fail-safe
+    ways you can think of. Avoid any chance of replacing or obfuscating it
+    with another modal error message that triggers half a second later.
+
 When handling client-side errors, you often have another choice to make:
 halt the application or allow it to continue running. If the error only applies
 to part of your system, you may want to allow the user to continue using the
@@ -120,7 +133,7 @@ wrong with the server). The most common statuses for web application errors are:
   we don't know what error." It's the catch-all.
 * **503 Unavailable:** The server is experiencing an outage, either planned or
   unplanned.
-  
+
 Know these codes, and know them well, and you'll be well on your way to handling any
 error that comes your way via an AJAX request.
 
